@@ -112,7 +112,6 @@ const validators = {
 	},
 
 	string(value, field, model, messages = resources) {
-		console.log('validate string', field);
 		let res = checkEmpty(value, field.required, messages);
 		if (res != null) return res;
 
